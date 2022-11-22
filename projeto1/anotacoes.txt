@@ -1,0 +1,12 @@
+Distribuição Poisson => distribuição de probabilidade
+f(k, lambda) = Pr(X=k) = (lambda^k * e^-lambda) / k!
+	lambda = média da distribuição
+	k = número de ocorrências (k=0, 1, 2, ...)
+	
+
+- Descobrir média de gols de cada time em uma partida (lambda em Poisson)
+=> média da média de gols nos últimos anos = m
+	-> m1 = m*f1 / (f1+f2)		-> proporção de força da equipe 1 em relação à 2 (%)
+	-> m2 = m - m1
+	sendo f = força
+	=> força do ranking da FIFA
