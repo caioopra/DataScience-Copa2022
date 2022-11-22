@@ -9,8 +9,6 @@ selecoes = pd.read_excel(
     "content/DadosCopaDoMundoQatar2022.xlsx", sheet_name="selecoes", index_col=0
 )
 
-jogos = pd.read_excel("content/DadosCopaDoMundoQatar2022.xlsx", sheet_name="jogos")
-
 # ----------------------------
 # carreganndo os dados de pontuação da FIFA
 fifa = selecoes["PontosRankingFIFA"]
