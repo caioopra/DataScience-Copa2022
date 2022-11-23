@@ -6,7 +6,7 @@ from scipy.stats import poisson
 st.title("Previsão de Jogos da Copa")
 
 selecoes = pd.read_excel(
-    "content/DadosCopaDoMundoQatar2022.xlsx", sheet_name="selecoes", index_col=0
+    "DadosCopaDoMundoQatar2022.xlsx", sheet_name="selecoes", index_col=0
 )
 
 # ----------------------------
@@ -156,5 +156,5 @@ st.table(matriz.applymap(lambda x: f"{str(round(100*x,1))}%"))
 # probabilidades do jogo
 st.markdown("---")
 st.markdown("## 🌎 Probabilidaes dos Jogos da Copa")
-jogosCopa = pd.read_excel("content/outputEstimativaJogosCopa.xlsx", index_col=0)
+jogosCopa = pd.read_excel("outputEstimativaJogosCopa.xlsx", index_col=0)
 st.table(jogosCopa[["grupo", "seleção1", "seleção2", "Vitória", "Empate", "Derrota"]])
